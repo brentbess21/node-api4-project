@@ -44,5 +44,9 @@ server.post('/api/login', (req, res)=> {
 })
 
 
+server.get('*', (req, res)=> {
+    res.send('<h1>Hello Users!</h1>')
+})
+
 
 module.exports = server;
